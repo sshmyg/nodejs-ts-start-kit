@@ -1,4 +1,4 @@
 module.exports = {
-  'src/*.ts': ['eslint --fix', 'pretty-quick --staged'],
+  'src/*.ts': ['eslint --fix', 'prettier --ignore-unknown --write'],
   'src/**/*.ts': () => 'tsc -p tsconfig.json --noEmit',
 };
